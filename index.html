@@ -1,0 +1,94 @@
+<!DOCTYPE hmtl>
+<html lang="pt">
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form method="POST" action="/seila">
+        <label>Escolha os cursos que desejar:</label>
+        <br>
+        <input id="reactnative" type="checkbox" name="curso" value="reactnative">
+        <label for="reactnative">React Native</label>
+        <br>
+        <input id="reactjs" type="checkbox" name="curso" value="reactjs">
+        <label for="reactjs">React JS</label>
+        <br>
+        <input id="nodejs" type="checkbox" name="curso" value="nodejs">
+        <label for="nodejs">Node JS</label>
+        <br><br>
+
+        <label>Coloque seus dados:</label><br>
+        <label for="email">e-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="algumacoisa@gmail.com">
+        <br>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="123456">
+        <br>
+        <label for="nomealuno">Nome Completo:</label><br>
+        <input id="nomealuno" type="text" name="nomealuno">
+        <br>
+        <label for="datanascimento">Data de Nascimento:</label><br>
+        <input id="datanascimento" type="date" name="datanascimento">
+        <br>
+        <label for="foto3x4">Foto 3x4:</label><br>
+        <input id="foto3x4" type="file" name="foto3x4">
+        <br>
+        <label for="telefone">Número de Contato:</label><br>
+        <input id="telefone" type="tel" name="telefone" placeholder="5531988885555">
+        <br>
+        <label for="horasestudo">Quantas horas você tem para estudar?</label><br>
+        <input id="horasestudo" type="number" name="horasestudo" min="1" max="24">
+        <br>
+
+
+
+        <br><br>
+
+        <label for="estado">Escolha seu Estado:</label><br>
+        <select id="estado" name="estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG" selected>Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+            <option value="EX">Estrangeiro</option>
+        </select>
+        <br><br>
+        <label for="motivocurso">O que te motivou a escolher esse(s) curso(s)?</label><br>
+        <textarea id="motivocurso" name="motivocurso"></textarea>
+        <br><br>
+        <input type="submit">
+        <input type="reset" value="Reiniciar">
+
+
+    </form>
+</body>
+
+</html>
